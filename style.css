@@ -1,0 +1,92 @@
+:root {
+  --main-background: rgb(118, 0, 0);
+  --main-text: rgb(40, 7, 7);
+  --redcode:rgb(221, 0, 0);
+  --bluecode:rgb(81, 0, 187);
+  --yellowcode:rgb(247, 187, 7);
+}
+body {
+  background-color: var(--main-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+}
+.MainText {
+  color: var(--main-text);
+  font-size: 60px;
+  font-family: "Lucida Console", Verdana, monospace;
+  margin: 60px;
+}
+button {
+  width: 300px;
+  height: 20px;
+  border: none;
+}
+
+.redcode {
+  background-color: var(--redcode);
+  filter: drop-shadow(var(--redcode) 0rem 0rem 50px);
+}
+.bluecode {
+  background-color: var(--bluecode);
+  filter: drop-shadow(var(--bluecode) 0rem 0rem 50px);
+}
+.yellowcode {
+  background-color: var(--yellowcode);
+  filter: drop-shadow(var(--yellowcode) 0rem 0rem 50px);
+}
+
+.supText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.suptextP1 {
+  color: rgb(245, 218, 17);
+  font-family: "Lucida Console", Verdana, monospace;
+  font-size: 60px;
+}
+hr{
+  /* margin-top: -40px; */
+  width: 100%;
+}
+.suptextP2 {
+  color: rgb(232, 241, 249);
+  font-family: "Lucida Console", Verdana, monospace;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-left: 20px;
+}
+.suptextP3 {
+  color: aliceblue;
+  font-family: "Lucida Console", Verdana, monospace;
+  font-size: 17px;
+  padding-left: 20px;
+  padding-left: 20px;
+}
+
+
+
+@media (max-width: 930px) {
+  .sectionCode {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    margin: 5px;
+  }
+  .suptextP1{
+    font-size: 25px;
+  }
+ 
+}
+@media (max-width: 600px) {
+  
+  .suptextP3{
+    font-size: 9px;
+  }
+}
